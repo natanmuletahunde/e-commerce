@@ -9,5 +9,5 @@ Route::get('/products/{product}', [ProductController::class, 'show'])->name('pro
 Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
 
 Route::middleware(['auth'])->group(function () {
-Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
+    Route::post('/orders', [OrderController::class, 'store'])->name('orders.store');
 });
